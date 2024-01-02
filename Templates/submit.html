@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #2c3e50; /* Dark background color */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h3.big {
+            line-height: 1.8;
+        }
+
+        nav {
+            background-color: #34495e; /* Dark background color for navigation */
+            border: none;
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar-brand:hover {
+            color: #ffffff;
+        }
+
+        .navbar-nav>li>a {
+            color: #ffffff;
+        }
+
+        .navbar-nav>li>a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            background-color: #2c3e50; /* Dark background color */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <strong><a class="navbar-brand" href="/home">Employee Performance Prediction Using Machine Learning</a></strong>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/" class="btn btn-info btn-lg">Home</a></li>
+                <li><a href="/about" class="btn btn-info btn-lg">About</a></li>
+                <li><a href="/predict" class="btn btn-primary btn-lg">Predict</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3>
+            Based on the given input, {{prediction_text}}.
+        </h3>
+    </div>
+</body>
+
+</html>

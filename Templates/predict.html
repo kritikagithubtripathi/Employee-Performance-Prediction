@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('performance5.png') center/cover no-repeat fixed; /* Add your background image URL */
+            background-color: #2c3e50; /* Dark background color */
+            color: #ffffff;
+        }
+
+        nav {
+            background-color: #34495e; /* Dark background color for navigation */
+            border-bottom: 2px solid #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .btn {
+            background-color: #3498db;
+            border: none;
+        }
+
+        .navbar-nav .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            background-color: #2c3e50; /* Dark background color */
+            padding: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .container form {
+            margin-bottom: 20px; /* Adjust the margin between the form and other content */
+        }
+
+        .container h4 {
+            color: #ffffff;
+        }
+
+        .btn-success {
+            background-color: #2ecc71; /* Change the button color */
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #27ae60; /* Change the button hover color */
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <strong><a class="navbar-brand" href="/home">Employee Performance Prediction Using Machine Learning</a></strong>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <a href="/" class="btn btn-info btn-lg">Home</a>
+        <a href="/about" class="btn btn-info btn-lg">About</a>
+        <a href="/predict" class="btn btn-primary btn-lg">Predict</a>
+    </ul>
+  </div>
+</nav>
+    <div class="container">
+        <h4>
+        <form action="/pred", method="post">
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f1">quarter</label>
+                    <input class="form-control" id="f1" name="quarter" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f2">department</label>
+                    <input class="form-control" id="f2" name="department" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f3">day</label>
+                    <input class="form-control" id="f3" name="day" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f4">team</label>
+                    <input class="form-control" id="f4" name="team" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f5">targeted_productivity</label>
+                    <input class="form-control" id="f5" name="targeted_productivity" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f6">smv</label>
+                    <input class="form-control" id="f6" name="smv" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f7">over_time</label>
+                    <input class="form-control" id="f7" name="over_time" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f8">incentive</label>
+                    <input class="form-control" id="f8" name="incentive" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f9">idle_time</label>
+                    <input class="form-control" id="f9" name="idle_time" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f10">idle_men</label>
+                    <input class="form-control" id="f10" name="idle_men" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f11">no_of_style_change</label>
+                    <input class="form-control" id="f11" name="no_of_style_change" required="required" type="text">
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="f12">no_of_workers</label>
+                    <input class="form-control" id="f12" name="no_of_workers" required="required" type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="f13">month</label>
+                    <input class="form-control" id="f13" name="month" required="required" type="text">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg">SUBMIT</button>
+        </form>
+        <br>
+        </h4>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
